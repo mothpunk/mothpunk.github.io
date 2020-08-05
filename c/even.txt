@@ -1,0 +1,16 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int n = get_int("Hey Bobby, pass me a number real quick. ");
+
+    if (n % 2 == 0)
+    {
+        printf("Hey, that's an even number, you know I don't get along with even numbers, don't you?\n");
+    }
+
+    else {
+        printf("Ey, an oddie, just like you Bobby. Just like you.\n");
+    }
+}

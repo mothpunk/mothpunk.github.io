@@ -1,0 +1,19 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    char c = get_char("So, do you agree? (Y/N) ");
+
+    if (c == 'Y' || c == 'y') 
+    {
+        printf("Good, good. It's nice when things go to plan.\n");
+    }
+    else if (c == 'N' || c == 'n') 
+    {
+        printf("Really. What a shame.\n");
+    }
+    else {
+        printf("Fine. Be that way, prick.\n");
+    }
+}
