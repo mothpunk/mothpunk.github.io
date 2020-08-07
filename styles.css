@@ -46,10 +46,11 @@ a {
 }
 
 .category {
-  font-size: 20px;
+  font-size: 26px;
   color: #FF7F7F;
   opacity: 0.75;
   text-align: center;
+  margin: 0 auto;
   font-family: 'Noto Sans JP', sans-serif;
   text-decoration: underline;
 }
