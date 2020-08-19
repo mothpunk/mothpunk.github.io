@@ -1,0 +1,38 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+    float dollars;
+    do {
+        dollars = get_float("Change owed: ");
+    }
+    while (dollars < 0);
+
+    int coins = round(dollars * 100); // coins being the number of cents in the value 'dollars'
+    int number = 0; // number being the final answer; the number of coins needed to match the change
+
+    while (coins >= 25) {
+        number++;
+        coins-=25;
+    }
+
+    while (coins >= 10) {
+        number++;
+        coins-=10;
+    }
+
+    while (coins >= 5) {
+        number++;
+        coins-=5;
+    }
+
+    while (coins >= 1) {
+        number++;
+        coins-=1;
+    }
+
+    if (coins == 0) {
+        printf("%i coin(s)\n",number);
+    }
+}
