@@ -51,6 +51,7 @@ a {
   opacity: 0.75;
   text-align: center;
   margin: 0 auto;
+  margin-top: 50px;
   font-family: 'Noto Sans JP', sans-serif;
   text-decoration: underline;
 }
